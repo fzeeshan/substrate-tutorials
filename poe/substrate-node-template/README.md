@@ -45,6 +45,10 @@ cargo +nightly-2023-06-15 check -p node-template-runtime --release
 ```sh
 cargo +nightly-2023-06-15 build --release
 ```
+## above failed on Windows 10, if that happens try the one below
+```sh
+cargo +nightly-2023-06-15 build -p node-template-runtime --release
+```
 
 ### Embedded Docs
 
