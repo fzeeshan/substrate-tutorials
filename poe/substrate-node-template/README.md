@@ -10,23 +10,40 @@ Check to see which rust versions you have installed on your system
 ```sh
 rustup toolchain list
 ```
-Install the correct version which is as follows:
+Install the correct version according to your OS which is as follows:
 generally toolchain would be installed with rust, however, i have also added the command to install it below:
+### Linux
 ```sh
 rustup install nightly-2023-06-15
-rustup toolchain install nightly-2023-06-15-x86_64-unknown-linux-gnu
+```
+```sh
+# toolchain gets installed automatically
+# rustup toolchain install nightly-2023-06-15-x86_64-unknown-linux-gnu
+```
+```sh
 rustup target add wasm32-unknown-unknown --toolchain nightly-2023-06-15-x86_64-unknown-linux-gnu
 ```
+### Windows 10
+```sh
+rustup install nightly-2023-06-15
+```
+```sh
+# toolchain gets installed automatically
+# rustup toolchain install nightly-2023-06-15-x86_64-pc-windows-msvc
+```
+```sh
+rustup target add wasm32-unknown-unknown --toolchain nightly-2023-06-15-x86_64-pc-windows-msvc
+```
 
-
-### Build
+### Test & Build
 
 Use the following command to build the node without launching it:
 Also Included check command
 ```sh
 cargo +nightly-2023-06-15 check -p node-template-runtime --release
+```
+```sh
 cargo +nightly-2023-06-15 build --release
-
 ```
 
 ### Embedded Docs
@@ -35,7 +52,6 @@ After you build the project, you can use the following command to explore its pa
 
 ```sh
 ./target/release/node-template --dev --rpc-external
-
 ```
 ## connect using the front-end or polka explorer
 https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer
