@@ -1,3 +1,7 @@
+# Check out the correct repo using POE Directory
+In root director, follow instructions inside POE tutorial to ensure you have the correct repo and tools installed.
+This tutorial will work only on correct version of Substrate.
+
 # add new module to pay transaction fees to block author.
 In addition to this functionality, block rewards could also be added to pay a certain amount of coins to block author.
 Will be adding tutorial on how to add block authoring reward. This is different from block reward, will eventually implment block reward also, for now, this will show how to pay a portion of fee to the validator that created the block. This works much like Bitcoin but in a POA/POS model.
