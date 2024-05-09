@@ -1,4 +1,8 @@
-
+# Use the substrate tutorial
+Follow the official Tutorial:
+https://docs.substrate.io/tutorials/build-application-logic/use-macros-in-a-custom-pallet/
+simply adjust the rust tool chain versions, use the ones listed below
+ 
 # substrate node with poe implemented
 
 ### Clone the repository with only the latest commit history
