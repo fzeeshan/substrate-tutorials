@@ -32,17 +32,6 @@ rustup install nightly-2023-06-15
 ```sh
 rustup target add wasm32-unknown-unknown --toolchain nightly-2023-06-15-x86_64-unknown-linux-gnu
 ```
-### Windows 10
-```sh
-rustup install nightly-2023-06-15
-```
-```sh
-# toolchain gets installed automatically
-# rustup toolchain install nightly-2023-06-15-x86_64-pc-windows-msvc
-```
-```sh
-rustup target add wasm32-unknown-unknown --toolchain nightly-2023-06-15-x86_64-pc-windows-msvc
-```
 
 ### Test & Build
 
